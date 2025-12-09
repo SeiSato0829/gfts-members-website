@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { motion } from 'framer-motion';
-import AnimatePresence from 'framer-motion/dist/es/components/AnimatePresence/index.mjs';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Menu, X } from 'lucide-react';
 import { NAV_LINKS, SITE_NAME } from '../constants';
 import { CTAButton } from './CTAButton'; // Assuming CTAButton is refactored separately

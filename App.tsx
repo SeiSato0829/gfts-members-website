@@ -3,7 +3,7 @@ import { BrowserRouter, Routes, Route, useLocation } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { LoadingScreen } from './components/LoadingScreen';
-import AnimatePresence from 'framer-motion/dist/es/components/AnimatePresence/index.mjs';
+import { AnimatePresence } from 'framer-motion';
 
 // Import Page Components
 import HomePage from './pages/HomePage';
