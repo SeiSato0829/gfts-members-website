@@ -14,6 +14,12 @@ export default defineConfig(({ mode }) => {
       plugins: [react()],
       build: {
         outDir: 'dist', // Explicitly set output directory
+        commonjsOptions: {
+          include: [/node_modules/], // Ensure CommonJS modules are processed
+        },
+      },
+      optimizeDeps: {
+        include: ['framer-motion'], // Explicitly include framer-motion for optimization
       },
       define: {
         'process.env.API_KEY': JSON.stringify(env.GEMINI_API_KEY),
